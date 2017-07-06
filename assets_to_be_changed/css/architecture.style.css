@@ -2,10 +2,11 @@
   [1. General]
 ----------------------------------------------------*/
 body {
-	font: 14px "Open Sans", Arial, sans-serif;
+	font: 16px "Roboto", Arial, sans-serif;
+
 }
 p, li, li a {
-  color: #7d7d8f;
+  color: #383339;
 }
 a {
   color: #c94645;
@@ -16,12 +17,12 @@ p {
 
 /* Default highlight color */
 ::-moz-selection {
-  color: #fff;
-  background: #bd2b00;
+  color: #000000;
+  background: #9598a0;
 }
 ::selection {
-  color: #fff;
-  background: #bd2b00;
+  color: #000000;
+  background: #9598a0;
 }
 
 .g-textarea-noresize {
@@ -259,7 +260,7 @@ p {
 .g-heading-v7 h4,
 .g-heading-v7 h5,
 .g-heading-v7 .h5 {
-	font-family: "Kanit", serif;
+	font-family: "Kanit", "Roboto", sans-serif;
 }
 .g-heading-v7 h2,
 .g-heading-v7 .h2 {
@@ -287,7 +288,7 @@ p {
 	content: "";
 	display: inline-block;
 	width: 100px;
-	height: 8px;
+	height: 4px;
 	background: #fff;
 	position: absolute;
 	left: 0;
@@ -305,7 +306,7 @@ p {
 		padding-bottom: 30px;
 	}
 	.g-heading-v7 .h2:after {
-		height: 7px;
+		height: 4px;
 	}
 }
 .g-heading-v7 h3,
@@ -602,22 +603,39 @@ p {
 	padding-top: 40px;
 	padding-bottom: 70px;
 }
+
+.activity-section .g-heading-v7 .h2:after {
+	content: "";
+	display: inline-block;
+	width: 100px;
+	height: 4px;
+	background: #E72924;
+	position: absolute;
+	/*left: 0;*/
+	/*margin-bottom: 20px;*/
+    left: 50%;
+	margin-left: -55px;
+}
+
+.activity-section .first-child{
+    margin-top: 30px;
+}
 /*Adding background image that would only show on hover*/
 .arch-service {
 	padding: 0;
 	position: relative;
 }
 .arch-service-1 {
-	background: url("assets_to_be_changed/img/Golf-Clubs.jpg") no-repeat 10% 0 / cover;
+	background: url(../img/GoKarts_crop.jpg) no-repeat 10% 0 / cover;
 }
 .arch-service-2 {
-	background: url(../img-temp/interior-design.jpg) no-repeat 30% 0 / cover;
+	background: url(../img/MiniGolf_Par2.jpg) no-repeat 30% 0 / cover;
 }
 .arch-service-3 {
-	background: url(../img-temp/project-documentation.jpg) no-repeat 80% 0 / cover;
+	background: url(../img/Batting%20Cages_BW.jpg) no-repeat 80% 0 / cover;
 }
 .arch-service-4 {
-	background: url(../img-temp/choice-of-land.jpg) no-repeat 50% 0 / cover;
+	background: url(../img/BungeeTrampoline_crop.jpg) no-repeat 50% 0 / cover;
 }
 
 .arch-service-in {
@@ -662,12 +680,12 @@ p {
 	font: 700 26px "Kanit", Arial, sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	margin: 20px 0 25px;
+	margin: 10px 0 15px;
 }
 
 .arch-service-in p {
-	font-family: "Roboto Slab", serif;
-	font-size: 13px;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
 	margin-bottom: 30px;
 	color: #fff;
 }
@@ -685,7 +703,7 @@ p {
 
 .arch-service-in .arch-service-btn:hover,
 .arch-service-in .arch-service-btn:focus  {
-	color: #fc5b5a;
+	color: #272730;
 }
 
 /*Modal popup window controls*/
@@ -700,15 +718,19 @@ p {
 	margin-top: -20px;
 }
 
+.modal-body h3 {
+	font-size: 50px;
+}
+
 .modal-body p {
 	color: rgba(6, 6, 12, 1);
-	text-align: left;
-	font-family: "Roboto Slab", serif;
+	text-align: center;
+	font-family: "Roboto", Arial, sans-serif;
 }
 
 .modal-bot {
 	text-align: center;
-	padding: 0 50px 20px;
+	padding: 0 60px 20px;
 }
 
 .modal-body .modal-bot h3 {
@@ -800,7 +822,7 @@ p {
 
 .service-section .owl-theme .owl-controls .owl-buttons div:hover,
 .service-section .owl-theme .owl-controls .owl-buttons div:focus {
-  background: #c94645;
+  background: #272730;
 }
 
 .service-section .owl-theme .owl-buttons i {
@@ -841,62 +863,33 @@ p {
 	}
 }
 
-/*--------------------------------------------------
-    [9. Awards Section]
-----------------------------------------------------*/
-.awards-section{
+.party-section{
 	background: #e73e2f;
 	/*background: #e73e2f;*/
 }
-.awards-section .content-md {
+.party-section .content-md {
   padding-top: 20px;
   padding-bottom: 60px;
 }
 
-.awards-section .content-md h2 {
+.party-section .content-md .h2 {
 	color: #fff;
+	font-size: 32px;
 }
 
-.awards-section .content-md p {
+.party-section .content-md p {
 	color: #ffffff;
 }
 
-/*.awards-section .content-md .col-md-4 {*/
-	/*padding-left: 50px;*/
-/*}*/
-/* Awards section design - NOT USING */
-/*.awards-desc {*/
-	/*padding: 50px 20px 10px;*/
-	/*text-align: center;*/
-	/*text-transform: uppercase;;*/
-/*}*/
-/*.awards-desc img {*/
-	/*margin: 0 auto 35px;*/
-	/*max-width: 202px;*/
-	/*max-height: 350px;*/
-	/*display: block;*/
-/*}*/
-/*.awards-desc em {*/
-	/*font: 300 11px "Roboto", Arial, sans-serif;*/
-	/*font-style: normal;*/
-	/*color: #9797a2;*/
-	/*letter-spacing: 1px;*/
-	/*display: block;*/
-	/*margin-bottom: 10px;*/
-/*}*/
-/*.awards-desc h3 {*/
-	/*font: 500 18px "Roboto", Arial, sans-serif;*/
-	/*color: #000;*/
-	/*margin: 0 0 25px;*/
-	/*letter-spacing: 2px;*/
-/*}*/
-/*.awards-desc a {*/
-	/*font-size: 11px;*/
-	/*color: #c94645;*/
-	/*font-weight: bold;*/
-/*}*/
+.party-section ul li{
+	color: #fff;
+	line-height: 1.5;
+	/*text-align: justify;*/
+}
 
-
+/*.party-section .container .col-md-4{*/
+	/*margin-left: -30px;*/
+/*}*/
 
 @media (max-width:992px) {
 	.award-div {
@@ -911,6 +904,23 @@ p {
 #contact .content-md {
 	padding-top: 20px;
 	padding-bottom: 50px;
+}
+
+#contact .g-heading-v7 .h2:after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #E72924;
+    position: absolute;
+    /*left: 0;*/
+    /*margin-bottom: 20px;*/
+    left: 50%;
+    margin-left: -55px;
+}
+
+#contact .first-child{
+    margin-top: 30px;
 }
 
 #contact p {
@@ -1075,10 +1085,11 @@ p {
 }
 
 .footer-list li > a {
-	font-size: 15px;
-	color: #9598a0;
+	font-size: 20px;
+	color: #E72924;
 	padding: 8px 13px;
-	background: #272730;
+	border-radius: 5px;
+	background: #ffffff;
 	transition: all .4s ease;
 }
 
@@ -1088,7 +1099,7 @@ p {
 
 .footer-list li > a:hover {
 	color: #fff;
-	background: #40434A;
+	background: #272730;
 }
 
 /* Owl Carousel */
